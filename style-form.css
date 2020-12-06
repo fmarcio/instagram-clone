@@ -1,0 +1,365 @@
+/* GENERAL STYLES */
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+/* WRAPPER, CONTAINER AND FORM */
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 93.5rem;
+    margin: 3rem auto 0;
+}
+
+#wrapper > .container {
+    display: flex;
+    padding: 0 8rem;
+}
+
+.phone-app-bg {
+    height: 61.8rem;
+    background: url('img/smartphones-new.png') center no-repeat;
+    flex: 1;
+}
+
+.form-data {
+    width: 100%;
+    max-width: 35rem;
+    margin-top: 3rem;
+}
+
+.form-data form {
+    background-color: #fff;
+    border: 2px solid #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+.logo img {
+    width: 17.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.form-item input {
+    padding: .8rem 4.8rem;
+    margin-bottom: .5rem;
+    border: 1px solid #eee;
+    border-radius: .4rem;
+    text-align: left;
+}
+
+.form-item input:focus {
+    outline: none;
+}
+
+.form-btn {
+    margin: 1rem 0 1.5rem;
+    height: 3rem;
+    background-color: #3897f0;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: .4rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+    cursor: pointer;
+    outline: none;
+}
+
+.form-btn:hover {
+    filter: brightness(110%);
+}
+
+.form-btn:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.thin-line {
+    font-size: 1.3rem;
+    color: #999;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.thin-line:before, .thin-line:after {   
+    content: "";
+    position: absolute;
+    background-color: #999;
+    width: 40%;
+    height: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.thin-line:before {
+    left: 0;
+}
+
+.thin-line:after {
+    right: 0;
+}
+
+.facebook-login {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #385185;
+    margin-bottom: 2.5rem;
+}
+
+.facebook-login i {
+    font-size: 2rem;
+    margin-right: .7rem;
+}
+
+.facebook-login i span {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: relative;
+    top: -3px;
+}
+
+.fab.fa-facebook-square:before {
+    margin-right: 5px;
+}
+
+.password-reset {
+    font-size: 1.2rem;
+    color: #003569;
+}
+
+/* SIGN-UP AND GET THE APP */
+
+.sign-up {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #262626;
+    padding: 2rem 0;
+    background-color: #fff;
+    border: 2px solid #eee;
+    margin: 1rem 0;
+}
+
+.sign-up a {
+    color: #3897f0;
+    font-weight: bold;
+}
+
+.get-app {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.get-app span {
+    display: block;
+    margin: 2rem 0;
+    color: #262626;
+}
+
+.apps-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.apps-logo img {
+    max-width: 14rem;
+    cursor: pointer;
+}
+
+.apps-logo img:first-child {
+    margin-right: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 5rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0;
+    max-width: 70rem;
+    line-height: 2rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-right: 1.6rem;
+}
+
+.footer-nav ul li a, .copyright {
+    color: #999;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+}
+
+/* DARK THEME */
+
+body.dark {
+    background-color: #1f1f1f;
+    color: white;
+    transition: background 0.3s linear, color 0.3s linear;
+}
+
+.get-app span.light-span {
+    color: #f9f9f9;
+}
+
+.toggle-container {
+    position: fixed;
+    top: 1rem;
+    right: 5rem;
+}
+
+input[type='checkbox'] {
+    visibility: hidden;
+}
+
+i.fas.fa-moon {
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+i.fas.fa-moon span {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+    .phone-app-bg {
+        display: none;
+    }
+
+    .form-data {
+        margin: 0 auto;
+    }
+
+    #wrapper > .container {
+        padding: 0;
+    }
+
+    footer .container {
+        padding: 0 2rem;
+        justify-content: center;
+    }
+
+    .footer-nav ul {
+        justify-content: center;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #wrapper {
+        padding-top: 0;
+    }
+
+    .form-data form {
+        padding: 2rem;
+    }
+
+    .sign-up {
+        margin: 4rem 0;
+    }
+
+    footer {
+        padding-bottom: 2rem;
+    }
+
+    .toggle-container {
+        right: 3rem;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .form-data form {
+        padding: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form-item input {
+        max-width: 90%;
+        font-size: .9rem;
+    }
+
+    .sign-up {
+        margin: 4rem auto;
+        width: 80%;
+    }
+    
+    .apps-logo img {
+        max-width: 10rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .sign-up {
+        font-size: 1.2rem;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: .5rem;
+    }
+}
+
+
