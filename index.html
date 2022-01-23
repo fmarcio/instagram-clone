@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Set instagram favicon -->
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/favicons?domain=instagram.com"
+      type="image/png"
+    />
+    <!-- Font awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style-form.css" />
+    <title>Instagram Clone</title>
+  </head>
+
+  <body>
+    <div class="toggle-container">
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle">
+        <i class="fas fa-moon">
+          <span>Modo escuro</span>
+        </i>
+      </label>
+    </div>
+
+    <div id="wrapper">
+      <div class="container">
+        <!-- this div will the put the phone img as a background -->
+        <div class="phone-app-bg"></div>
+
+        <div class="form-data">
+          <form id="form">
+            <div class="logo">
+              <img src="img/instagram-logo.png" alt="Instagram Logo" />
+            </div>
+
+            <div id="error-msg"></div>
+            <div class="form-item">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome de usuário"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <input type="password" id="password" placeholder="Senha" />
+            </div>
+            <button type="submit" class="form-btn">Entrar</button>
+
+            <span class="thin-line">ou</span>
+            <a href="#" class="facebook-login">
+              <i class="fab fa-facebook-square">
+                <span>Entrar com Facebook</span>
+              </i>
+            </a>
+            <a href="#" class="password-reset">Esqueceu a senha?</a>
+          </form>
+
+          <div class="sign-up">
+            Não tem uma conta? <a href="#">Cadastre-se</a>
+          </div>
+
+          <div class="get-app">
+            <span>Obtenha o aplicativo</span>
+            <div class="apps-logo">
+              <img src="img/apple-store.png" alt="Baixar na App Store" />
+              <img src="img/google-play.png" alt="Baixar no Google Play" />
+            </div>
+
+            <p class="go-to-profile">
+              <a href="index-profile.html">Logar com conta existente</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <nav class="footer-nav">
+          <ul>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Carreiras</a>
+            </li>
+            <li>
+              <a href="#">Ajuda</a>
+            </li>
+            <li>
+              <a href="#">API</a>
+            </li>
+            <li>
+              <a href="#">Privacidade</a>
+            </li>
+            <li>
+              <a href="#">Termos</a>
+            </li>
+            <li>
+              <a href="#">Contas mais relevantes</a>
+            </li>
+            <li>
+              <a href="#">Hashtags</a>
+            </li>
+            <li>
+              <a href="#">Localizações</a>
+            </li>
+            <li>
+              <a href="#">Beleza</a>
+            </li>
+            <li>
+              <a href="#">Dança e apresentação</a>
+            </li>
+            <li>
+              <a href="#">Fitness</a>
+            </li>
+            <li>
+              <a href="#">Comida e bebida</a>
+            </li>
+            <li>
+              <a href="#">Casa e jardim</a>
+            </li>
+            <li>
+              <a href="#">Música</a>
+            </li>
+            <li>
+              <a href="#">Artes visuais</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">&copy; 2020 Instagram do Facebook</div>
+      </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="script-form.js"></script>
+  </body>
+</html>
