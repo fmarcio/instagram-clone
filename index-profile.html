@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Set instagram favicon -->
-    <link rel="icon" href="https://www.google.com/s2/favicons?domain=instagram.com" type="image/png">
+    <link
+      rel="icon"
+      href="https://www.google.com/s2/favicons?domain=instagram.com"
+      type="image/png"
+    />
     <!-- Font awesome CDN  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <!-- Style sheet -->
-    <link rel="stylesheet" href="style-profile.css">
+    <link rel="stylesheet" href="style-profile.css" />
     <title>Instagram clone</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="toggle-container">
-        <input type="checkbox" name="toggle" id="toggle">
-        <label for="toggle">
-            <i class="fas fa-moon">
-                <span>Modo escuro</span>
-            </i>
-        </label>
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle">
+        <i class="fas fa-moon">
+          <span>Modo escuro</span>
+        </i>
+      </label>
     </div>
 
     <div class="instagram-wrapper">
-        <div class="instagram-phone">
-            <img src="./img/smartphones-new.png" alt="celular">
+      <div class="instagram-phone">
+        <img src="./img/smartphones-new.png" alt="celular" />
+      </div>
+      <div class="instagram-continue">
+        <div class="group">
+          <img
+            src="./img/instagram-logo.png"
+            class="instagram-logo"
+            alt="instagram logo"
+          />
+          <div class="profile-photo">
+            <img src="./img/perfil-marcio.jpg" alt="foto de perfil" />
+          </div>
+          <button class="instagram-login">Continue como fmarcio</button>
+          <a href="#" class="instagram-logout">Remover conta</a>
         </div>
-        <div class="instagram-continue">
-            <div class="group">
-                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
-                <div class="profile-photo">
-                    <img src="./img/perfil-marcio.jpg" alt="foto de perfil">
-                </div>
-                <button class="instagram-login">Continue como fmarcio</button>
-                <a href="#" class="instagram-logout">Remover conta</a>
-            </div>
-            <div class="group">
-                <p class="not-account">Não é fmarcio?</p>
-                <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
-                    ou
-                    <span class="link-blue">Inscreva-se</span>
-                </p>
-            </div>
-            <div class="get-the-app">
-                <p class="get-app"><span>Obtenha o aplicativo</span></p>
-                <div class="download">
-                    <img src="img/apple-store.png" alt="">
-                    <img src="img/google-play.png" alt="">
-                </div>
-            </div>
+        <div class="group">
+          <p class="not-account">Não é fmarcio?</p>
+          <p class="not-account">
+            <span class="link-blue">Alternar contas</span>
+            ou
+            <span class="link-blue">Inscreva-se</span>
+          </p>
         </div>
+        <div class="get-the-app">
+          <p class="get-app"><span>Obtenha o aplicativo</span></p>
+          <div class="download">
+            <img src="img/apple-store.png" alt="" />
+            <img src="img/google-play.png" alt="" />
+          </div>
+
+          <p class="back-home">
+            <a href="index.html">Ir para página inicial</a>
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Script JS -->
     <script src="script-profile.js"></script>
-</body>
+  </body>
 </html>
